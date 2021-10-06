@@ -1,0 +1,96 @@
+.data{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.data tr > * {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.data th {
+    background-color: #16a085;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+.data th:first-letter {
+    color: yellow;
+}
+
+.data tr:nth-child(odd) td {
+    background-color: lightgray;
+}
+
+.data tr td:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.data tr:hover td {
+    background-color: gray;
+}
+
+/*.data tr:hover td:first-child {
+    color: red;
+}
+
+.data tr:hover td:first-child:hover {
+    color:black;
+}*/
+
+.data tr:hover td:first-child:not(:hover) {
+    color: #e74c3c;
+}
+
+.data tr td:nth-child(n+4):nth-child(-n+6) {
+    text-align: center;
+}
+
+.data tr:hover td:nth-child(n+4):nth-child(-n+6) {
+    background-color: #3498db;
+}
+
+.data tr td:hover:nth-child(n+4):nth-child(-n+6) {
+    background-color: #2ecc71;
+}
+
+.data tr td:hover:nth-child(n+4) ~ td:nth-child(-n+6) {
+    background-color: #f1c40f;
+}
+
+.data tr > *:nth-last-child(2) {
+    display: none;
+}
+
+.data td a[href^="https:"] {
+    color: green;
+}
+
+.data td a[href^="http:"] {
+    color: red;
+}
+
+.data td a:not([href^="http"]) {
+    color: orange;
+}
+
+.data td a[href$=".pdf"]::after {
+    content: " (PDF)";
+}
+
+.data th {
+    position: sticky;
+    top: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
